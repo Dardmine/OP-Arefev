@@ -1,0 +1,11 @@
+debug/addorderwindow.o
+debug/data.o
+debug/diagram.o
+debug/main.o
+debug/mainwindow.o
+debug/reportwindow.o
+debug/qrc_resources.o
+debug/moc_addorderwindow.o
+debug/moc_diagram.o
+debug/moc_mainwindow.o
+debug/moc_reportwindow.o

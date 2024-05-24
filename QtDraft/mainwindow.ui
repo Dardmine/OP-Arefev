@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Аренда автомобилей</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/img/car.png</normaloff>:/img/car.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">font: 16pt &quot;Segoe UI&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Аренда автомобилей</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="closeButton">
+        <property name="text">
+         <string>Закрыть</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QCommandLinkButton" name="commandLinkButton">
+        <property name="text">
+         <string>Сделать заказ</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/img/img/favicon.ico</normaloff>:/img/img/favicon.ico</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">font: 12pt &quot;Segoe UI&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Поиск заказа по:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBoxSearch">
+          <property name="currentText">
+           <string/>
+          </property>
+          <property name="currentIndex">
+           <number>-1</number>
+          </property>
+          <property name="placeholderText">
+           <string>Выберите ключ поиска:</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Цель поездки</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Модель</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Коробка передач</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Детское кресло</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="SearchLine">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>80</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="deleteButton">
+            <property name="text">
+             <string>Удалить</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="0">
+     <widget class="QTableView" name="tableView">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="tabKeyNavigation">
+       <bool>false</bool>
+      </property>
+      <property name="showDropIndicator" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="dragDropOverwriteMode">
+       <bool>false</bool>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <property name="textElideMode">
+       <enum>Qt::ElideRight</enum>
+      </property>
+      <property name="gridStyle">
+       <enum>Qt::SolidLine</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <widget class="QMenu" name="menu_2">
+     <property name="title">
+      <string>Сформировать отчёт</string>
+     </property>
+     <addaction name="report"/>
+     <addaction name="diagram"/>
+    </widget>
+    <widget class="QMenu" name="menu_3">
+     <property name="title">
+      <string>Сортировать по ...</string>
+     </property>
+     <widget class="QMenu" name="menu_4">
+      <property name="title">
+       <string>Марка</string>
+      </property>
+      <addaction name="sorting_model_AZ"/>
+      <addaction name="sorting_model_ZA"/>
+     </widget>
+     <widget class="QMenu" name="menu_6">
+      <property name="title">
+       <string>Дата начала аренды</string>
+      </property>
+      <addaction name="sorting_startDate_AZ"/>
+      <addaction name="sorting_startDate_ZA"/>
+     </widget>
+     <widget class="QMenu" name="menu_7">
+      <property name="title">
+       <string>Дата конца аренды</string>
+      </property>
+      <addaction name="sorting_endDate_AZ"/>
+      <addaction name="sorting_endDate_ZA"/>
+     </widget>
+     <addaction name="menu_4"/>
+     <addaction name="menu_6"/>
+     <addaction name="menu_7"/>
+     <addaction name="sorting_default"/>
+    </widget>
+    <addaction name="openFile"/>
+    <addaction name="saveFile"/>
+    <addaction name="separator"/>
+    <addaction name="menu_3"/>
+    <addaction name="separator"/>
+    <addaction name="menu_2"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <action name="openFile">
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+  </action>
+  <action name="saveFile">
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+  </action>
+  <action name="report">
+   <property name="text">
+    <string>По запросу</string>
+   </property>
+  </action>
+  <action name="diagram">
+   <property name="text">
+    <string>Графическое отображение данных</string>
+   </property>
+  </action>
+  <action name="sorting_model_AZ">
+   <property name="text">
+    <string>AZ</string>
+   </property>
+  </action>
+  <action name="sorting_model_ZA">
+   <property name="text">
+    <string>ZA</string>
+   </property>
+  </action>
+  <action name="actionAZ_2">
+   <property name="text">
+    <string>По возрастанию</string>
+   </property>
+  </action>
+  <action name="actionZA_2">
+   <property name="text">
+    <string>По убыванию</string>
+   </property>
+  </action>
+  <action name="sorting_startDate_AZ">
+   <property name="text">
+    <string>По возрастанию</string>
+   </property>
+  </action>
+  <action name="sorting_startDate_ZA">
+   <property name="text">
+    <string> По убыванию</string>
+   </property>
+  </action>
+  <action name="sorting_default">
+   <property name="text">
+    <string>По умолчанию</string>
+   </property>
+  </action>
+  <action name="sorting_endDate_AZ">
+   <property name="text">
+    <string>По возрастанию</string>
+   </property>
+  </action>
+  <action name="sorting_endDate_ZA">
+   <property name="text">
+    <string> По убыванию</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

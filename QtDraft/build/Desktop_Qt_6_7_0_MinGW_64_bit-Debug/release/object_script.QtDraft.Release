@@ -1,0 +1,11 @@
+release/addorderwindow.o
+release/data.o
+release/diagram.o
+release/main.o
+release/mainwindow.o
+release/reportwindow.o
+release/qrc_resources.o
+release/moc_addorderwindow.o
+release/moc_diagram.o
+release/moc_mainwindow.o
+release/moc_reportwindow.o
